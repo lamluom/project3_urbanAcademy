@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:  rgb(255, 218, 30);
+
+    --secondary-color: #F5F5F5;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+    font-family: "Roboto", sans-serif;
+
+
+
+}
+
+/* **  main  ** */
+
+/* header */
+.navbar-academy {
+    background-color: #ffffff;
+
+
+
+
+
+
+}
+
+.navbar-academy .navbar-academy-link1 {
+    color: rgb(220 188 27);
+}
+.navbar-academy .navbar-academy-link1:hover {
+     color: rgb(158, 132, 4);
+
+}
+
+.nav-link:focus {
+    outline: 1px solid var(--primary-color);
+    border-radius: 5px;
+}.nav-link {
+  color: rgb(220 188 27);
+}
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0px 0px 3px 2px rgb(163, 163, 163);
+}
+.header-search{
+color: #000;
+background-color: #e6ae06d6;
+ border-color: #e4af0d;
+}
+.header-search:hover{
+
+background-color: #e6ae06d6;
+
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.carousel-caption-back {
+
+    background-color: rgba(43, 43, 43, 0.664);
+
+/* header */
+/* Information about the department */
+
+    /* Information about the department */
+
+
+}
+
+/* Right-side icons
+*/
+
+
+.social-icons {
+    z-index: 9999;
+    right: 0;
+    margin-right: 0.65rem;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    overflow: hidden;
+}
+
+.social-icons a i {
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+.social-icons a:hover i {
+    opacity: 0.4 !important;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") !important;
+}
+
+.special-card {
+    position: relative;
+}
+
+.special-card::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 193, 7, 0.1);
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.special-card:hover::before {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.special-card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: rgba(255, 193, 7, 0.1);
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.special-card:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+/* Right-side icons
+*/
+
+/* **  main  ** */
+/* Welcome */
+
+.Welcome {
+    color: var(--primary-color);
+    background: linear-gradient(to top, gray, rgb(203, 203, 203));
+}
+
+.Welcome h3 {
+    color: var(--primary-color);
+
+}
+
+
+.accordion {}
+
+
+
+/* Welcome */
+
+
+
+/* section-image  */
+.section-image {
+    background-image: url(../images/11.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* section-image  */
+/* special-card  */
+.special-card {
+
+    box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+
+}
+
+/* special-card  */
+/*  Academy News  */
+.clip-slant {
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.clip-rect {
+    overflow: hidden;
+    position: relative;
+    height: 330px;
+}
+
+.clip-slant2 {
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.special-image {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    /* min-height: 100%; */
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.special-image1 {
+    background-image: url(../images/14.webp);
+}
+
+.special-image2 {
+    background-image: url(../images/15.webp);
+}
+
+.special-image3 {
+    background-image: url(../images/16.jpg);
+}
+
+.special-image4 {
+    background-image: url(../images/17.jpg);
+}
+
+.card:hover .special-image {
+    transform: scale(1.05);
+}
+
+.special-btn:hover {
+    background-color: rgb(165, 165, 165);
+    border: none;
+}
+
+/* Academy News */
+
+/* Our Instructors.. */
+
+.custom-card {
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    transform: scale(0.9);
+}
+
+
+
+.wider-container {
+    max-width: 1200px;
+}
+
+.special-card2 {
+    transition: 0.5s;
+    width: 10rem;
+    box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+    height: 180px;
+}
+
+.special-card2:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* Our Instructors.. */
+
+
+/* footer */
+
+.footer-p1-imag {
+    width: 100px;
+    height: 100px;
+    border-radius: 13px;
+}
+
+.footer1-title {
+    color: rgb(219, 231, 243);
+    margin-top: 10px;
+}
+
+.footer-p2-links {
+    color: rgb(219, 231, 243);
+    margin: 2px 0;
+}
+
+.footer-p2-link1 {
+    color: rgb(219, 231, 243);
+    text-decoration: none;
+}
+
+.footer-p2-cl {
+    color: rgb(219, 231, 243);
+}
+
+.footer-p2-ti {
+    color: rgb(219, 231, 243);
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.footer-p2-tit {
+    color: rgb(219, 231, 243);
+    margin-top: 8px;
+   
+}
+
+/* footer */

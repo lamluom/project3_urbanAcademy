@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Academy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!--   main -->
+    <main>
+      <!-- header -->
+      <header>
+        <nav
+          class="navbar-academy navbar navbar-expand-lg navbar-light px-3 fixed-top"
+        >
+          <div class="container-fluid">
+            <img src="images/1.jpg" alt="..." width="50px" height="50px" />
+            <a
+              class="navbar-academy-link1 navbar-brand fs-3 border-end border-secondary pe-3 border-2"
+              href="#"
+              ><b>&nbsp Urban Academy</b></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                    <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                    <li><a class="dropdown-item" href="#">Data Science</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">More Courses...</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search courses"
+                  aria-label="Search"
+                />
+                <button class="btn header-search me-2" type="submit">
+                  Search
+                </button>
+                <button
+                  class="btn btn-outline-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                  type="button"
+                >
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="modal fade" id="loginModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Student Login</h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Enter your email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="****"
+                  />
+                </div>
+                <input type="checkbox" /> Remember me
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-warning w-100"
+                  data-bs-dismiss="modal"
+                >
+                  Log in
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+      <!-- Information about  -->
+
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        style="height: 100vh"
+      >
+        <!-- Information about the department pointing arrow -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <!-- Information about the department pointing arrow -->
+        <!-- Information about the department-->
+
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="images/2.jpeg" class="d-block w-100 h-100" alt="..." />
+            <div class="carousel-caption d-block">
+              <div
+                class="carousel-caption-back overlay w-75 mx-auto rounded p-3 border border-light"
+              >
+                <h4 class="fs-5 fs-md-3">Web Development</h4>
+                <p class="fs-6 fs-md-5">
+                  Learn to build modern, responsive websites from scratch with
+                  HTML, CSS, and JavaScript.
+                </p>
+                <button class="btn btn-outline-warning me-2 text-light">
+                  View Course
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="images/3.jpg" class="d-block w-100 h-100" alt="..." />
+            <div class="carousel-caption d-block">
+              <div
+                class="carousel-caption-back overlay w-75 mx-auto rounded p-3 border border-light"
+              >
+                <h4 class="fs-5 fs-md-3">AI & Machine Learning</h4>
+                <p class="fs-6 fs-md-5">
+                  Explore artificial intelligence concepts with hands-on
+                  projects and real applications.
+                </p>
+                <button class="btn btn-outline-warning me-2 text-light">
+                  View Course
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item h-100">
+            <img src="images/4..JPG" class="d-block w-100 h-100" alt="..." />
+            <div class="carousel-caption d-block">
+              <div
+                class="carousel-caption-back overlay w-75 mx-auto rounded p-3 border border-light"
+              >
+                <h4 class="fs-5 fs-md-3">UI/UX Design</h4>
+                <p class="fs-6 fs-md-5">
+                  Master user interface design principles to create beautiful
+                  and functional digital products.
+                </p>
+                <button class="btn btn-outline-warning me-2 text-light">
+                  View Course
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="images/5.jpg" class="d-block w-100 h-100" alt="..." />
+            <div class="carousel-caption d-block">
+              <div
+                class="carousel-caption-back overlay w-75 mx-auto rounded p-3 border border-light"
+              >
+                <h4 class="fs-5 fs-md-3">Mobile Development</h4>
+                <p class="fs-6 fs-md-5">
+                  Build real mobile applications for Android & iOS using modern
+                  frameworks and tools.
+                </p>
+                <button class="btn btn-outline-warning me-2 text-light">
+                  View Course
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Information about the department -->
+        <!-- Information about the department button -->
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <!-- Information about the department button -->
+      </div>
+      <!-- Information about  -->
+
+      <!--  Right-side icons-->
+      <div
+        class="d-flex flex-column position-fixed top-50 end-0 translate-middle-y me-2 gap-3 social-icons opacity-50"
+      >
+        <a href="#" class="text-warning"
+          ><i class="fab fa-facebook-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-twitter-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-whatsapp-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-instagram-square fa-2x"></i
+        ></a>
+        <a href="#" class="text-warning"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+      <!--  Right-side icons -->
+    </main>
+
+    <!--   main -->
+    <!-- Welcome -->
+    <section>
+      <!-- Welcome1 -->
+
+      <div class="Welcome container-fluid rounded p-3">
+        <h3><b>Welcome</b></h3>
+        <p class="text-light">
+          Welcome to Urban Academy - Your gateway to modern online learning.
+          Explore high-quality courses designed by industry professionals to
+          help you build real skills with confidence. Whether you want to master
+          web development, dive into artificial intelligence, or design stunning
+          user interfaces, we provide a learning experience that is practical,
+          engaging, and career-focused. Learn at your own pace and take the next
+          step toward your future.
+        </p>
+        <button type="button" class="btn btn-warning text-light">
+          Learn More
+        </button>
+      </div>
+      <!-- Welcome -->
+
+      <hr />
+      <!-- Most Popular -->
+      <div
+        class="container-fluid rounded p-5"
+        style="background-color: rgb(164, 164, 164)"
+      >
+        <h3 class="text-light text-center">
+          <i><b>Most Popular Courses on Our Platform</b></i>
+        </h3>
+      </div>
+      <!-- Most Popular -->
+      <!-- Most department -->
+
+      <div class="accordion mt-4" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed text-secondary shadow-none border-bottom border-secondary"
+              style="background-color: rgb(215, 215, 215)"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              Web Development
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Learn how to build modern, responsive websites using HTML, CSS,
+              JavaScript, and popular frameworks. This course focuses on
+              hands-on projects that help you create real-world web applications
+              from scratch, covering both frontend and backend technologies.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed text-secondary shadow-none border-bottom border-secondary"
+              style="background-color: rgb(215, 215, 215)"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Artificial Intelligence
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Discover the fundamentals of artificial intelligence and machine
+              learning. Understand algorithms, data analysis, and real-life AI
+              applications through practical examples and guided exercises.
+              Perfect for beginners looking to enter the field of AI.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed text-secondary shadow-none border-bottom border-secondary"
+              style="background-color: rgb(215, 215, 215)"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              UI / UX Design
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Learn how to design visually appealing and user-friendly
+              interfaces. This course covers wireframing, prototyping, color
+              theory, and user experience principles to help you create
+              intuitive digital products that users love.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Most department -->
+
+      <hr />
+    </section>
+    <!-- Welcome -->
+    <!-- Programming Concepts -->
+    <section>
+      <!-- Programming Concepts -->
+
+      <div
+        class="container-fluid rounded p-4"
+        style="background-color: rgb(164, 164, 164)"
+      >
+        <h3 class="text-light text-center">
+          <i><b>Practice: Programming Concepts (English)</b></i>
+        </h3>
+      </div>
+      <!-- Write Your Notes or Code -->
+      <div
+        class="container-fluid rounded p-3"
+        style="background: linear-gradient(to top, gray, rgb(203, 203, 203))"
+      >
+        <span class="text-light fs-4"><b>Write Your Notes or Code</b></span>
+        <span class="fs-4" style="color: var(--primary-color)"
+          ><b>&nbsp Start Practicing</b></span
+        ><br />
+
+        <button
+          type="button"
+          class="btn btn-warning text-light copyBtn"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal1"
+        >
+          Copy Notes
+        </button>
+        <span class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none"
+          >Copied!</span
+        >
+
+        <br /><br />
+        <div
+          class="modal fade"
+          id="myModal1"
+          tabindex="-1"
+          aria-labelledby="myModalLabel1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog mt-5">
+            <div class="modal-content">
+              <div class="modal-header border-bottom">
+                <h5 class="modal-title text-warning"><i>Urban Academy</i></h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Your notes have been copied successfully.
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                >
+                  Ok
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <textarea
+          class="rounded mt-2 w-100 p-2"
+          style="height: 150px"
+          placeholder="Write your notes or code here..."
+        ></textarea>
+      </div>
+      <!-- Write Your Notes or Code -->
+      <hr />
+      <!-- Programming Concepts -->
+
+      <!-- UI / UX Design  -->
+      <div
+        class="container-fluid rounded p-4"
+        style="background-color: rgb(164, 164, 164)"
+      >
+        <h3 class="text-light text-center">
+          <i><b>Practice: UI / UX Design Notes</b></i>
+        </h3>
+      </div>
+      <div
+        class="container-fluid rounded p-3"
+        style="background: linear-gradient(to top, gray, rgb(203, 203, 203))"
+      >
+        <span class="text-light fs-4"><b>Design Ideas & Concepts</b></span>
+        <span class="fs-4" style="color: var(--primary-color)"
+          ><b>&nbsp Write Here</b></span
+        ><br />
+
+        <button
+          type="button"
+          class="btn btn-warning text-light copyBtn"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal1"
+        >
+          Copy Notes
+        </button>
+        <span class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none"
+          >Copied!</span
+        >
+
+        <br /><br />
+        <textarea
+          class="rounded mt-2 w-100 p-2"
+          style="height: 150px"
+          placeholder="Write your design ideas here..."
+        ></textarea>
+      </div>
+      <hr />
+      <!-- UI / UX Design  -->
+      <!-- Artificial Intelligence -->
+      <div
+        class="container-fluid rounded p-4"
+        style="background-color: rgb(164, 164, 164)"
+      >
+        <h3 class="text-light text-center">
+          <i><b>Practice: Artificial Intelligence Concepts</b></i>
+        </h3>
+      </div>
+      <div
+        class="container-fluid rounded p-3"
+        style="background: linear-gradient(to top, gray, rgb(203, 203, 203))"
+      >
+        <span class="text-light fs-4"><b>Summarize What You Learned</b></span>
+        <span class="fs-4" style="color: var(--primary-color)"
+          ><b>&nbsp Start Writing</b></span
+        ><br />
+
+        <button
+          type="button"
+          class="btn btn-warning text-light copyBtn"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal1"
+        >
+          Copy Summary
+        </button>
+        <span class="badge rounded-pill bg-secondary ms-2 copiedLabel d-none"
+          >Copied!</span
+        >
+
+        <br /><br />
+        <textarea
+          class="rounded mt-2 w-100 p-2"
+          style="height: 150px"
+          placeholder="Write your AI notes or summary here..."
+        ></textarea>
+      </div>
+      <hr />
+      <!-- Artificial Intelligence -->
+    </section>
+    <!-- Programming Concepts -->
+    <section>
+      <!-- section-image -->
+      <div class="section-image container-fluid"></div>
+      <!-- section-image -->
+    </section>
+    <!-- Featured -->
+    <section>
+      <!-- Featured -->
+      <div
+        class="container-fluid rounded p-4 mt-5"
+        style="background-color: rgb(164, 164, 164)"
+      >
+        <h3 class="text-light text-center">
+          <i><b>..Featured Courses..</b></i>
+        </h3>
+      </div>
+      <!-- cards -->
+      <div class="container my-5">
+        <div class="row g-4 justify-content-center">
+          <!-- card1 -->
+
+          <div class="col-sm-4 col-10">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 250px"
+                />
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Frontend Development</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Master HTML, CSS, and JavaScript to build responsive websites.
+                  Perfect for beginners starting their web development journey.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card1 -->
+          <!-- card2 -->
+
+          <div class="col-sm-4 col-10">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/7.png"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Full Stack Course</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Learn both frontend and backend technologies including React,
+                  Node.js, and databases to build complete web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <!-- card3 -->
+
+          <div class="col-sm-4 col-10">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/8.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Python Programming</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Start with Python basics and progress to advanced concepts.
+                  Ideal for data science, automation, and backend development.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+        </div>
+
+        <!-- cards -->
+        <!-- cards -->
+        <div class="row g-4 mt-4 justify-content-center">
+          <!-- card4 -->
+          <div class="col-sm-4 col-10">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/9.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Mobile Development</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Build real mobile applications for Android & iOS using React
+                  Native and Flutter with practical projects.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card4 -->
+          <!-- card5 -->
+          <div class="col-sm-4 col-10">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/10.JPG"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>UI/UX Design</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Master user interface design principles, wireframing,
+                  prototyping, and user experience research methods.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card5 -->
+          <!-- card6 -->
+          <div class="col-sm-4 col-10">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/111.jpg"
+                  class="card-img-top"
+                  alt=""
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Data Science</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Learn data analysis, visualization, and machine learning with
+                  Python, Pandas, and TensorFlow for real-world applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card6 -->
+        </div>
+        <!-- cards -->
+        <!-- cards -->
+        <div class="row g-5 mt-4 justify-content-center">
+          <!-- card7 -->
+
+          <div class="col-sm-4 col-10 mb-5">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/12.jpg"
+                  class="card-img-top"
+                  alt="..."
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Cybersecurity</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Understand network security, ethical hacking, encryption, and
+                  threat protection for modern digital systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card7 -->
+          <!-- card8 -->
+
+          <div class="col-sm-4 col-10 mb-5">
+            <div class="card h-100 special-card">
+              <div class="p-2">
+                <img
+                  src="images/13.jpg"
+                  class="card-img-top"
+                  alt=".."
+                  style="height: 250px"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: slategray">
+                  <b><i>Digital Marketing</i></b>
+                </h5>
+                <div class="d-flex">
+                  <a
+                    href="#"
+                    class="btn btn-warning text-light d-inline-block ms-auto px-4"
+                    >SHOW</a
+                  >
+                </div>
+                <p class="card-text mt-2">
+                  Master SEO, social media marketing, content strategy, and
+                  analytics to drive business growth online.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card8 -->
+        </div>
+
+        <!-- cards -->
+      </div>
+
+      <!-- Featured -->
+    </section>
+    <!-- Featured -->
+    <!-- image -->
+    <section>
+      <div class="section-image container-fluid"></div>
+      <hr />
+    </section>
+    <!-- image -->
+    <!-- ..Our Instructors.. -->
+    <section>
+      <!-- ..Our Instructors.. -->
+      <div
+        class="container-fluid rounded py-4"
+        style="background-color: rgb(164, 164, 164)"
+      >
+        <h3 class="text-light text-center">
+          <i><b>..Our Instructors..</b></i>
+        </h3>
+      </div>
+      <div class="container 5 px-5" style="margin-top: 80px">
+        <div class="row justify-content-center" style="gap: 50px">
+          <div class="col-sm-3 col-8">
+            <div
+              class="card bg-dark text-white custom-card"
+              style="height: 250px; border-radius: 20px"
+            >
+              <img
+                src="images/18.jpg"
+                class="card-img h-100"
+                alt="..."
+                style="border-radius: 20px"
+              />
+              <div
+                class="card-img-overlay h-100"
+                style="
+                  background-color: rgba(43, 43, 43, 0.664);
+                  border-radius: 20px;
+                "
+              >
+                <h5
+                  class="card-title"
+                  style="font-size: 15px; color: rgb(230, 230, 230)"
+                >
+                  <b><i>Senior UI/UX Instructor</i></b>
+                </h5>
+                <p class="card-text" style="color: rgb(230, 230, 230)">
+                  🕔 8+ Years Experience
+                </p>
+                <img
+                  src="images/18.jpg"
+                  alt="..."
+                  class="rounded-pill border border-2 border-white position-absolute"
+                  style="
+                    width: 70px;
+                    height: 90px;
+                    bottom: 55px;
+                    left: 20px;
+                    object-fit: cover;
+                  "
+                />
+                <div style="position: absolute; bottom: 5px; left: 20px">
+                  <p class="mb-1 fw-semibold" style="font-size: 1rem">
+                    Eng. Salem Mohamed
+                  </p>
+                  <p class="mb-0 fst-italic" style="font-size: 0.9rem">
+                    UI/UX Design Lead
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-8">
+            <div
+              class="card bg-dark text-white custom-card"
+              style="height: 250px; border-radius: 20px"
+            >
+              <img
+                src="images/19.webp"
+                class="card-img h-100"
+                alt="..."
+                style="border-radius: 20px"
+              />
+              <div
+                class="card-img-overlay h-100"
+                style="
+                  background-color: rgba(43, 43, 43, 0.664);
+                  border-radius: 20px;
+                "
+              >
+                <h5
+                  class="card-title"
+                  style="font-size: 15px; color: rgb(230, 230, 230)"
+                >
+                  <b><i>Content Creation Specialist</i></b>
+                </h5>
+                <p class="card-text" style="color: rgb(230, 230, 230)">
+                  🕔 6+ Years Experience
+                </p>
+                <img
+                  src="images/19.webp"
+                  alt="..."
+                  class="rounded-pill border border-2 border-white position-absolute"
+                  style="
+                    width: 70px;
+                    height: 90px;
+                    bottom: 55px;
+                    left: 20px;
+                    object-fit: cover;
+                  "
+                />
+                <div style="position: absolute; bottom: 5px; left: 20px">
+                  <p class="mb-1 fw-semibold" style="font-size: 1rem">
+                    Eng. Mohamed Ilady
+                  </p>
+                  <p class="mb-0 fst-italic" style="font-size: 0.9rem">
+                    Content Creator
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-8">
+            <div
+              class="card bg-dark text-white custom-card"
+              style="height: 250px; border-radius: 20px"
+            >
+              <img
+                src="images/20.jpg"
+                class="card-img h-100"
+                alt="..."
+                style="border-radius: 20px"
+              />
+              <div
+                class="card-img-overlay h-100"
+                style="
+                  background-color: rgba(43, 43, 43, 0.664);
+                  border-radius: 20px;
+                "
+              >
+                <h5
+                  class="card-title"
+                  style="font-size: 15px; color: rgb(230, 230, 230)"
+                >
+                  <b><i>Full Stack Developer</i></b>
+                </h5>
+                <p class="card-text" style="color: rgb(230, 230, 230)">
+                  🕔 10+ Years Experience
+                </p>
+                <img
+                  src="images/20.jpg"
+                  alt="..."
+                  class="rounded-pill border border-2 border-white position-absolute"
+                  style="
+                    width: 70px;
+                    height: 90px;
+                    bottom: 55px;
+                    left: 20px;
+                    object-fit: cover;
+                  "
+                />
+                <div style="position: absolute; bottom: 5px; left: 20px">
+                  <p class="mb-1 fw-semibold" style="font-size: 1rem">
+                    Eng. Amgad Fathy
+                  </p>
+                  <p class="mb-0 fst-italic" style="font-size: 0.9rem">
+                    Senior Web Developer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ..Our Instructors.. -->
+    </section>
+    <!-- ..Our Instructors.. -->
+    <!-- Academy News -->
+    <section>
+      <!-- Academy News -->
+      <h3 class="text-center" style="color: slategray; margin-top: 100px">
+        <b><i>Academy News</i></b>
+      </h3>
+      <div
+        class="container-md wider-container px-0 px-md-3"
+        style="margin-top: 40px"
+      >
+        <div
+          class="card mb-3 w-100 px-2"
+          style="box-shadow: 7px 7px 10px 3px rgb(150, 150, 150)"
+        >
+          <div class="row g-0 h-100">
+            <div
+              class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block"
+            >
+              <div class="special-image special-image1 min-vh-25 h-100"></div>
+            </div>
+            <div
+              class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect"
+            >
+              <div class="special-image special-image1"></div>
+            </div>
+            <div class="col-md-8 d-flex order-2 order-md-1">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>New AI Course Launch</i></b>
+                </h3>
+                <p
+                  class="card-text text-secondary border-bottom d-inline-block border-4 border-warning pb-2"
+                  style="font-size: 12px"
+                >
+                  <b>Mon.May 25th 2024</b>
+                </p>
+                <p class="card-text fs-6 d-none d-md-block">
+                  Urban Academy is excited to announce our new Artificial
+                  Intelligence Fundamentals course! This comprehensive program
+                  covers machine learning basics, neural networks, and practical
+                  AI applications. Perfect for beginners looking to enter the
+                  field of artificial intelligence with hands-on projects and
+                  real-world examples.
+                </p>
+                <p class="card-text d-md-none d-block" style="font-size: 13px">
+                  New AI Fundamentals course launched! Learn machine learning
+                  basics with hands-on projects. Perfect for beginners.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🎓 Course Info</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🕔 5 min read</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                  >📖 Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card mb-3 w-100 px-2"
+          style="
+            box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+            margin-top: 40px;
+          "
+        >
+          <div class="row g-0 h-100">
+            <div
+              class="col-md-4 order-1 order-md-1 d-none d-md-block clip-slant2"
+            >
+              <div class="special-image special-image2 min-vh-25 h-100"></div>
+            </div>
+            <div
+              class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect"
+            >
+              <div class="special-image special-image2"></div>
+            </div>
+            <div class="col-md-8 d-flex order-2 order-md-1">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Student Success Stories</i></b>
+                </h3>
+                <p
+                  class="card-text text-secondary border-bottom d-inline-block border-4 border-warning pb-2"
+                  style="font-size: 12px"
+                >
+                  <b>Mon.May 18th 2024</b>
+                </p>
+                <p class="card-text fs-6 d-none d-md-block">
+                  Listen to inspiring stories from our graduates who transformed
+                  their careers through our courses. In this episode, Sarah
+                  shares how she went from complete beginner to landing a
+                  frontend developer job at a tech startup in just 6 months. We
+                  discuss learning strategies, portfolio building, and interview
+                  preparation tips.
+                </p>
+                <p class="card-text d-md-none d-block" style="font-size: 13px">
+                  Podcast featuring graduate success stories. Learn how Sarah
+                  became a frontend developer in 6 months.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🎙 Podcast</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🕔 38 mins</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                  >▶ Listen Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card mb-3 w-100 px-2"
+        
+
+          style="
+            box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+            margin-top: 40px;
+          "
+
+        >
+          <div class="row g-0 h-100">
+            <div
+              class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block"
+            >
+              <div class="special-image special-image3 min-vh-25 h-100"></div>
+            </div>
+            <div
+              class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect"
+            >
+              <div class="special-image special-image3"></div>
+            </div>
+            <div class="col-md-8 d-flex order-2 order-md-1">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Free Web Development Workshop</i></b>
+                </h3>
+                <p
+                  class="card-text text-secondary border-bottom d-inline-block border-4 border-warning pb-2"
+                  style="font-size: 12px"
+                >
+                  <b>Mon.May 11th 2024</b>
+                </p>
+                <p class="card-text fs-6 d-none d-md-block">
+                  Join our free hands-on workshop on Web Development
+                  fundamentals. This 3-hour session introduces HTML, CSS, and
+                  JavaScript basics through practical exercises. Perfect for
+                  beginners interested in exploring web development. Limited
+                  spots available - register early to secure your place.
+                </p>
+                <p class="card-text d-md-none d-block" style="font-size: 13px">
+                  Free Web Development workshop: Learn HTML, CSS, JavaScript
+                  basics. Limited spots available.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🌐 Workshop</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🕔 3 hours</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                  >📝 Register</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card mb-3 w-100 px-2"
+          style="
+            box-shadow: 7px 7px 10px 3px rgb(150, 150, 150);
+            margin-top: 40px;
+          "
+        >
+          <div class="row g-0 h-100">
+            <div
+              class="col-md-4 order-1 order-md-1 d-none d-md-block clip-slant2"
+            >
+              <div class="special-image special-image4 min-vh-25 h-100"></div>
+            </div>
+            <div
+              class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect"
+            >
+              <div class="special-image special-image4"></div>
+            </div>
+            <div class="col-md-8 d-flex order-2 order-md-1">
+              <div class="card-body my-auto">
+                <h3 class="card-title text-warning fs-3">
+                  <b><i>Platform Updates & Features</i></b>
+                </h3>
+                <p
+                  class="card-text text-secondary border-bottom d-inline-block border-4 border-warning pb-2"
+                  style="font-size: 12px"
+                >
+                  <b>Mon.May 4th 2024</b>
+                </p>
+                <p class="card-text fs-6 d-none d-md-block">
+                  We've launched major updates to our learning platform! New
+                  features include interactive code editors, collaborative
+                  project spaces, enhanced mobile app, and AI-powered
+                  personalized learning paths. These improvements are based on
+                  student feedback to enhance your learning experience.
+                </p>
+                <p class="card-text d-md-none d-block" style="font-size: 13px">
+                  Platform updates: Interactive code editors, collaborative
+                  spaces, mobile app, and AI learning paths.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🚀 New Features</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6"
+                  >🕔 8 min read</a
+                >
+                <a
+                  href="#"
+                  class="btn btn-warning text-light d-inline-block ms-auto px-2 mt-3 special-btn fs-6"
+                  >🔍 Explore</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Academy News -->
+    </section>
+    <!-- Academy News -->
+    <!-- Free Tutorials -->
+    <section>
+      <!-- Free Tutorials -->
+      <div class="container w-75" style="margin-top: 100px">
+        <div class="row justify-content-center">
+          <!-- Browse -->
+
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+          >
+            <div class="card border-secondary special-card2">
+              <div class="card-body text-center">
+                <h4 class="card-title fs-6" style="color: slategray">
+                  <b><i>Learn Programming</i></b>
+                </h4>
+                <img
+                  src="images/21.jpg"
+                  alt
+                  class="img-fluid d-block mx-auto"
+                  style="width: 70px; height: 70px; margin-top: 16px"
+                />
+                <a href="#" class="d-inline-block mt-2">Browse Library</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Browse -->
+          <!-- Practice -->
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+          >
+            <div class="card border-secondary special-card2">
+              <div class="card-body text-center">
+                <h4 class="card-title fs-6" style="color: slategray">
+                  <b><i>Coding Exercises</i></b>
+                </h4>
+                <img
+                  src="images/22.jpg"
+                  alt
+                  class="img-fluid d-block mx-auto"
+                  style="width: 70px; height: 70px; margin-top: 16px"
+                />
+                <a href="#" class="d-inline-block mt-2">Practice Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Practice -->
+          <!-- Download -->
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+          >
+            <div class="card border-secondary special-card2">
+              <div class="card-body text-center">
+                <h4 class="card-title fs-6" style="color: slategray">
+                  <b><i>E-Books & Guides</i></b>
+                </h4>
+                <img
+                  src="images/23.png"
+                  alt
+                  class="img-fluid d-block mx-auto"
+                  style="width: 70px; height: 70px; margin-top: 16px"
+                />
+                <a href="#" class="d-inline-block mt-2">Download PDFs</a>
+              </div>
+            </div>
+          </div>
+          <!-- Download -->
+          <!-- Join -->
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center"
+          >
+            <div class="card border-secondary special-card2">
+              <div class="card-body text-center">
+                <h4 class="card-title fs-6" style="color: slategray">
+                  <b><i>Community Forum</i></b>
+                </h4>
+                <img
+                  src="images/24.jpg"
+                  alt
+                  class="img-fluid d-block mx-auto"
+                  style="width: 70px; height: 70px; margin-top: 16px"
+                />
+                <a href="#" class="d-inline-block mt-2">Join Discussion</a>
+              </div>
+            </div>
+          </div>
+          <!-- Join -->
+        </div>
+      </div>
+      <!-- Free Tutorials -->
+    </section>
+    <!-- Free Tutorials -->
+    <!--footer-->
+    <footer>
+      <!--footer-->
+      <div
+        class="container-fluid"
+        style="margin-top: 100px; background-color: slategrey"
+      >
+        <br />
+        <hr />
+        <div class="container py-3 d-none d-sm-block">
+          <!--footer parit1-->
+
+          <div class="row text-center align-items-center mb-2">
+            <div class="col-sm-4">
+              <img class="footer-p1-imag" src="images/1.jpg" alt="..." />
+              <div class="footer1-title fs-5">
+                <b><i>Urban Academy</i></b>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img class="footer-p1-imag" src="images/25.png" alt="..." />
+              <div class="footer1-title fs-5">
+                <b><i>Learning Resources</i></b>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <img class="footer-p1-imag" src="images/26.jpg" alt="..." />
+              <div class="footer1-title fs-5">
+                <b><i>Our Mission</i></b>
+              </div>
+            </div>
+          </div>
+          <hr style="border-color: #5a6670; margin: 8px 0" />
+          <!--footer parit1-->
+
+          <!--footer parit2-->
+          <div class="row text-center mt-2">
+            <div class="col-sm-4">
+              <p class="footer-p2-links">Email: info@urbanacademy.com</p>
+              <p class="footer-p2-links">Phone: +20 123 456 7890</p>
+              <p class="footer-p2-links">Address: Cairo, Egypt</p>
+            </div>
+            <div class="col-sm-4">
+              <p class="footer-p2-links">
+                <a href="#" class="footer-p2-link1">Course Catalog</a>
+              </p>
+              <p class="footer-p2-links">
+                <a href="#" class="footer-p2-link1">Student Portal</a>
+              </p>
+              <p class="footer-p2-links">
+                <a href="#" class="footer-p2-link1">Career Support</a>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p class="footer-p2-links">Quality Education</p>
+              <p class="footer-p2-links">Industry-Ready Skills</p>
+              <p class="footer-p2-links">Lifetime Learning Access</p>
+            </div>
+          </div>
+          <!--footer parit2-->
+        </div>
+
+        <div class="container py-4 d-block d-sm-none">
+          <div class="row text-center mb-3">
+            <div class="col-12">
+              <img
+                src="images/1.jpg"
+                alt="..."
+                style="width: 100px; height: 100px"
+              />
+              <div class="fs-5 foooter-p2-cl" style="margin-top: 10px">
+                <b><i>Urban Academy</i></b>
+              </div>
+              <p class="footer-p2-cl">Email: info@urbanacademy.com</p>
+              <p class="footer-p2-cl">Phone: +20 123 456 7890</p>
+              <p class="footer-p2-cl">Address: Cairo, Egypt</p>
+              <hr style="border-color: #5a6670" />
+            </div>
+          </div>
+          <div class="row text-center mb-3">
+            <div class="col-12">
+              <img
+                src="images/1.jpg"
+                alt="."
+                style="width: 100px; height: 100px"
+              />
+              <div class="fs-5 footer-p2-cl" style="margin-top: 10px">
+                <b><i>Learning Resources</i></b>
+              </div>
+              <p class="footer-p2-tit">
+                <a href="#" class="footer-p2-ti">Course Catalog</a>
+              </p>
+              <p class="footer-p2-cl">
+                <a href="#" class="footer-p2-ti">Student Portal</a>
+              </p>
+              <p class="footer-p2-cl">
+                <a href="#" class="footer-p2-ti">Career Support</a>
+              </p>
+              <hr style="border-color: #5a6670" />
+            </div>
+          </div>
+          <div class="row text-center mb-3">
+            <div class="col-12">
+              <img
+                src="images/1.jpg"
+                alt="..."
+                style="width: 100px; height: 100px"
+              />
+              <div
+                class="fs-5 footer-p2-ti footer-p2-cl"
+                style="margin-top: 10px"
+              >
+                <b><i>Our Mission</i></b>
+              </div>
+              <p class="footer-p2-tit">Quality Education</p>
+              <p class="footer-p2-cl">Industry-Ready Skills</p>
+              <p class="footer-p2-cl">Lifetime Learning Access</p>
+            </div>
+          </div>
+        </div>
+        <hr style="margin: 10px 0" />
+        <h5 class="text-center text-body" style="margin: 0">
+          <b
+            >© 2024 Urban Academy. All Rights Reserved. Designed By Eng/ Lamluom
+            Rabie
+          </b>
+        </h5>
+        <br />
+      </div>
+      <!--footer-->
+    </footer>
+    <!--footer-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
